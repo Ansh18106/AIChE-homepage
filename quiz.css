@@ -1,0 +1,18 @@
+
+  #surveyComplete,
+#surveyNext,
+#surveyPrev {
+    color: #1ab394;
+}
+
+div.timer {
+  float: center;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  margin-left: 550px;
+  padding-top: 22px;
+  background: rgba(229, 247, 250, 0.877);
+  border: 2px solid rgba(185, 6, 201, 0.726);
+  border-radius: 1pc;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="homepage.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css"> -->
+</head>
+<body>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-md navbar-light-bg-dark sticky-top"></nav>
+    <div class="container-fluid">
+     
+      
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="w3-dropdown-hover w3-right">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Dropdown 
+      </button>
+    <div class="dropdown-menu">
+        <div><a  class ="search" href="#search">Search</a></div>
+        <div><a class ="about" href="#about">About</a></div>
+        <div><a class ="login" href="#login">login</a></div>
+      <div><a class="sign-in" href="#sign in">sign in</a></div>
+      <div><a class="close" href="#close">close</a></div>
+    </div>
+    </div>
+  <a class= "navbar-brand" href="#"><img src = "F:\NITR AIChE\logo.svg" alt="The Global Home of Chemical Engineers"></a>
+  <button class="navbar-toggler" type="button" data-toggles="collapse" data-target = "#navbarResponsive">
+    <span class="navbar-toggler-icon"></span>  
+  </button>
+  <ul class="navbar-nav">
+
+    <div class="li-1"><li class="nav-item">
+      <a class="nav-link" href="#">communities</a>
+    </li></div>
+    <div class="li-2"><li class="nav-item">
+      <a class="nav-link" href="#">membership</a>
+    </li></div>
+    <div class="li-3"><li class="nav-item">
+      <a class="nav-link" href="#">events</a>
+    </li></div>
+    <div class="li-4"><li class="nav-item">
+      <a class="nav-link" href="#">publications</a>
+    </li></div>
+    <div class="li-5"><li class="nav-item">
+      <a class="nav-link" href="#">academy</a>
+    </li>
+      
+</nav>
+<br>
+    </div>
+    <!-- image slider -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="F:\NITR AIChE\images.png"  width="250" height="200" class="mx-auto d-block">
+      <div class="carousel-caption">
+        <button type="button" class="btn btn-outline-dark btn-lg"> view </button>
+        <button type="button" class="btn btn-primary btn-lg">click</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="F:\NITR AIChE\images (2).png"  width="255" height="200" class="mx-auto d-block">
+    </div>
+    <div class="carousel-item">
+      <img src="F:\NITR AIChE\images (1).png" width="300" height="200" class="mx-auto d-block">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+  <div class="row jumbotron">
+    <div class="col-xs-12 col-xs-12 col-xs-9 col-xs-9 col-xs-10">
+      <p class="lead"> 
+        <span class="align-baseline"><h1>Hello !</h1></span>
+        <h3>
+          this page is created by me Ansh Bansal
+        </h3>
+      </p>
+    </div>
+    <div class="col-xs-12 col-xs-12 col-xs-3 col-xs-3 col-xs-2">
+      <span class="align-text-bottom">
+        <a href="F:\quiz\quiz.html" target="_blank"><button type="button" class="btn btn-outline-secondary btn-lg">Start Quiz</button></a>
+      </span>
+     
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary "  data-toggle="modal" data-target="#myModal">
+    <h6>Accessible to director only</h6>
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Error</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h6> you are not the director ):
+          </h6>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div data-spy="scroll" data-target=".navbar" class="navbar bg-gray" data-offset="50">
+  <h1 class="text-secondary">Contestants</h1> <br> 
+  <div class="navbar navbar-expand-sm bg-dark navbar-blue"> 
+    
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Management</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Web Development</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Designers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section4">Content</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div id="section1" class="container-fluid bg-info" style="padding-top:10px;padding-bottom:10px">
+    <h1>Management</h1>
+    <p>Harsh Dixit <br>Shipra Das</p>
+  </div>
+  <div id="section2" class="container-fluid bg-warning" style="padding-top:10px;padding-bottom:10px">
+    <h1>Web Development</h1><p>Shubham Giri<br>Karan Agrawal <br>Ansh Bansal</p></div>
+  <div id="section3" class="container-fluid bg-secondary" style="padding-top:10px;padding-bottom:10px">
+    <h1>Designers</h1>
+  <p>Silalipi Das<br>Swastik Brahma</p> </div>
+  <div id="section4" class="container-fluid bg-danger" style="padding-top:10px;padding-bottom:10px">
+    <h1>Content</h1>
+    <p>Ritik Chail <br> Shourat Fatma
+    </p>
+   </div>
+  
+<!--- Fixed background -->
+
+
+<!--- Emoji Section -->
+
+  
+<!--- Meet the team -->
+
+
+<!--- Cards -->
+
+
+<!--- Two Column Section -->
+<div><br><br></div>
+
+<!--- Connect -->
+<!-- <div class="l-footer__social-and-signup" style="background-color: rgba(2, 5, 59, 0.808);">
+  <h3>Connect</h3>
+  <a href="https://www.facebook.com/AIChENITR/" target="_blank"><i class="fa fa-facebook-square fa-2x" style="margin: 20px;font-size:48px;color:rgb(3, 107, 192)"></i></a>
+  <a href="https://twitter.com/aiche.nitrkl/" target="_blank"><i class="fa fa-twitter" style="margin: 20px;font-size:48px;color:rgb(0, 203, 253)"></i></a>
+  <a href="https://www.linkedin.com/aiche.nitrkl/" target="_blank"><i class="fa fa-linkedin" style="margin: 20px;font-size:48px;background-color: blue;color:rgb(255, 255, 255)"></i></a>
+  <a href="https://aboutme.google.com/u/0/" target="_blank"><i class="fa fa-google-plus" style="margin: 20px;font-size:48px;border-radius :250px ;background-color:rgb(194, 9, 9);color:rgb(255, 255, 255)"></i></a>
+  <a href="https://www.instagram.com/aiche.nitrkl/" target="_blank"><i class="fa fa-instagram" style="margin: 20px;font-size:48px;color:rgba(255, 94, 0, 0.87)"></i></a>
+  <a href="https://www.youtube.com/channel/UC_c00NRUeqpDyyJ3Ekz5L8A" target="_blank"><i class="fa fa-youtube" style="margin: 20px;font-size:48px;color:rgba(255, 0, 0, 0.938)"></i></a>
+</div>   -->
+
+
+<!--- Footer -->
+<footer  style="background-color: silver;">
+  <div class="address">
+    <header><h4>Mobile No :8979718096</h4></header>
+  </div>
+   
+</footer>
+
+
+
+
+
+  </body>
+</html>
